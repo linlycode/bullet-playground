@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 2.8.12)
+
+project(BULLET_PLAYGROUND)
+
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+set(BUILD_SHARED_LIBS ON CACHE BOOL "Build shared libraries")
+set(BUILD_UNIT_TESTS OFF CACHE BOOL "Build unit tests")
+set(BUILD_BULLET2_DEMOS OFF CACHE BOOL "Build Bullet 2 demos")
+set(BUILD_CPU_DEMOS OFF CACHE BOOL "Build CPU demos")
+set(BUILD_OPENGL3_DEMOS OFF CACHE BOOL "Build OpenGL 3 demos")
+set(BUILD_PYBULLET OFF CACHE BOOL "Build pyBullet")
+
+add_subdirectory(third_party/bullet3)
