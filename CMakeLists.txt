@@ -14,3 +14,6 @@ set(BUILD_OPENGL3_DEMOS OFF CACHE BOOL "Build OpenGL 3 demos")
 set(BUILD_PYBULLET OFF CACHE BOOL "Build pyBullet")
 
 add_subdirectory(third_party/bullet3)
+
+include_directories(${BULLET_PHYSICS_SOURCE_DIR}/src)
+subdirs(src/hello_world)
