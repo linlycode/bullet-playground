@@ -1,0 +1,12 @@
+root = true
+
+# all files
+[*]
+end_of_line = lf
+charset = utf-8
+
+# source files
+[{CMakeLists.txt,*.h,*.hpp,*.cpp}]
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
